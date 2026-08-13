@@ -1,0 +1,1 @@
+export const required=v=>String(v??"").trim().length>0;export const nonNegative=v=>Number(v)>=0;export const email=v=>/^\S+@\S+\.\S+$/.test(v);export const unique=(rows,key,value,except)=>!rows.some(x=>x.id!==except&&String(x[key]).toLowerCase()===String(value).toLowerCase());
